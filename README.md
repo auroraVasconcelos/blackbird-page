@@ -1,7 +1,5 @@
-# Blackbird-page
+# Blackbird-Page
 
-This is my very first project with virtual identity. 
-It will be a simple single-page likely to a news webpage. The golas is to create it responsive (mobile first) using HTML and CSS only.
+This is my very first project with Virtual Identity.
 
-Best,
-Aurora Vasconcelos
+Blackbird-Page is a simple singlepage template from a news website. For this project I must use HTML5 boilerplate.
