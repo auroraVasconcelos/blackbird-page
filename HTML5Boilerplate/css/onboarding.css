@@ -6,57 +6,50 @@
     --principal-color: rgb(67,156,206);
 }
 
-/************************  NavBar Styles ******************************/
+
+/*************** NAV & HEADER ******************/
 nav{
-    margin: 0.2em;
+    display: inline;
 }
 nav ul{
-    margin-top: 1em;
+    margin: 1em;
 }
-
 nav ul li{
-    list-style: none;
     display: inline;
 }
 
 nav ul li a{
     text-decoration: none;
     color: var(--principal-color);
-    padding: 0 0 0 0.7em;
-    font-size: 1.2em;
+
 }
 
 nav input[type=search]{
-    outline: none;
-    border-radius: 50em;
     border: none;
-    background-color: rgb(232,230,231);
-    color: rgb(169, 163, 177);
-    padding: 0.5em;
-    font-size: small;
+    border-radius: 50em;
+    background-color: #eaeaea;
+    padding: 0.4em 0.7em;
+    color: #bbb;
+    /*COMO POR SEARCH ICON*/
 }
 
-/************************  Header Styles ******************************/
-.headline{
+.header__img{
+    background-image: url('../../images/banner.jpg');
+    width: 100%;
+    height: 25vh;
+}
+
+.header__text{
     background-color: var(--principal-color);
     color: white;
-    padding: 0.7em;
+    padding: 1em;
 }
 
-header .headline h1{
-    font-weight:lighter;
-    margin: 0;
+.header__text h1{
+    font-weight: lighter;
+    margin: auto 0;
 }
 
-header p{
-    font-size: 80%;
-    margin: 0.5em 0;
-}
-
-header button{
-    border: none;
-    color: var(--principal-color);
-    background-color: white;
-    padding: 0.5em;
-    margin: 1em 0;
+.header__text p{
+    
 }

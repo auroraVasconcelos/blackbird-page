@@ -21,34 +21,39 @@
   <link rel="stylesheet" href="css/onboarding.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/e98167f4d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   
-<!-- Add your site or application content here -->
+<!-- Add your site or application content here -->  
+  <nav>
+    <form action="" class="search">
+      <input type="search" name="search" class="search__input" value="Search">
+      <input type="hidden" name="submit" value="sumbit">
+    </form>
+    <ul class="nav">
+      <li class="nav__item"><a href="#">Link 1 Lorem</a></li>
+      <li class="nav__item"><a href="#">Link 2 ipsum</a></li>
+      <li class="nav__item"><a href="#">Link 3 dolor</a></li>
+      <li class="nav__item"><a href="#">Link 4 sit</a></li>
+      <li class="nav__item"><a href="#">Link 5 amet</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <nav>
-      <input type="search" name="search" value="Search">
-      <!-- Input escondido submit ?? -->
-      <ul>
-        <li><a href="#">Link 1 Lorem</a></li>
-        <li><a href="#">Link 2 ipsum</a></li>
-        <li><a href="#">Link 3 dolor</a></li>
-        <li><a href="#">Link 4 sit</a></li>
-        <li><a href="#">Link 5 amet</a></li>
-      </ul>
-    </nav>
-    <header>
-      <img src="#" alt="Fundo">
-      <div class="headline"> 
-        <h1>Headline</h1>
-        <p>Text</p>
-        <button>no target</button>
-      </div>
-    </header>
+  <header class="header">
+    <div class="header__img"></div>
+    <div class="header__text"> 
+      <h1>Headline</h1>
+      <p>Text</p>
+      <button  class="header__button">
+        <span>no target</span>
+        <span><i class="fas fa-arrow-right"></i></span>
+      </button>
+    </div>
+  </header>
 
-  </main>
+  
   <!--Scripts-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
