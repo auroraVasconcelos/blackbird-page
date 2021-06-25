@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif;
   --principal-color: rgb(67,156,206);
   --margin-text: 16px;
-  overflow-x: hidden;
 }
 
 .container{
@@ -137,7 +136,6 @@ nav ul li a{
   margin: 1rem 1rem 1rem 0;
   list-style: none;
   font-size: 14px;
-  align-items: center;
 }
 
 .breadcrumb ul li a{
@@ -149,6 +147,9 @@ nav ul li a{
   color: #bbb;
 }
 
+.arrow{
+    font-size: 8px;
+}
 
 
 /*************************************************** MAIN *************************************************************/
@@ -166,10 +167,11 @@ nav ul li a{
   margin: 1rem 0;
 }
 
-/****************************** ARTICLE IMAGE ***********************************/
-.article__text{
+.main__text{
     margin-top: 16px;
 }
+
+/****************************** ARTICLE IMAGE ***********************************/
 
 .article__image{
   width: 100%;
@@ -180,7 +182,7 @@ nav ul li a{
   .article__content{
      display: flex;
    }
-  .article__text{
+  .main__text--article{
      float: right;
      width: 50%;
      margin-left: 32px;
@@ -199,18 +201,117 @@ nav ul li a{
 /****************************** ARTICLE VIDEO ***********************************/
 
 .article__video{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
 .article__video iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.article__text--video{
-    margin-top: 16px;
+/******************************  Format Text ***********************************/
+
+.formattext__list li{
+  margin: var(--margin-text);
+}
+
+.formattext__links li{
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.formattext__links li a{
+  text-decoration: none;
+  color: var(--principal-color);
+  font-weight: bold;
+}
+
+table{
+  border-collapse: collapse;
+  border: 1px solid #aaa;
+  width: 100%;
+  margin: var(--margin-text) 0;
+  font-size: 14px;
+}
+
+table th, table td{
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table th{
+  background-color: var(--principal-color);
+  color: white;
+}
+
+.formattext__quotes{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #aaa;
+}
+
+.formattext__quotes::before{
+  font-size: 2rem;
+}
+
+/********* VER PRIEMIRA ASPA ************/
+
+/******************************  Form Section ***********************************/
+
+input[type=text], input[type=number], select, option, input[type=email] {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+}
+
+.label, .submit__text{
+  font-size: 14px;
+  color: #666;
+
+}
+
+input[type=textarea]{
+    width: 100px;
+    height: 200px;
+}
+
+.label p{
+    margin: 1rem 0;
+}
+.checkbox, .radio{
+    padding: 1rem 0;
+}
+.checkbox__input, .radio__input{
+    padding: 0.3rem 0;
+}
+
+.submit__btn, .cancel__btn{
+    padding: 0.5rem;
+    border: none;
+    color: white;
+}
+
+.submit__btn{
+    background-color: var(--principal-color);
+}
+.cancel__btn{
+    background-color: #aaa;
+}
+
+.submit__text{
+    display: block;
+}
+
+@media(min-width:480px){
+  .submit{
+    display: flex;
+    justify-content:space-between;
+  }
 }
