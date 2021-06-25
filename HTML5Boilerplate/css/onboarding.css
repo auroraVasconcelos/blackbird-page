@@ -263,7 +263,7 @@ table th{
 
 /******************************  Form Section ***********************************/
 
-input[type=text], input[type=number], select, option, input[type=email] {
+.form input[type=text], input[type=number], select, option, input[type=email] {
   display: block;
   width: 100%;
   height: auto;
