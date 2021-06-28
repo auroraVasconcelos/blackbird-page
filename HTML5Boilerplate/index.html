@@ -25,7 +25,9 @@
 </head>
 
 <body>
-  
+  <symbol id="icon-file-empty" viewBox="0 0 32 32">
+    <path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+    </symbol>
 <!-- Add your site or application content here -->  
   <nav>
     <div class="container">
@@ -89,139 +91,231 @@
 
    <main>
      <div class="container">
-        <h1 class="main__title">Fundamentals I: Layout, Styling & Semantics</h1>
-        <article>
-          <h2 class="main__subtitle">Image Section<wbr> (Lanscape, no caption)</h2>
-          <div class="article__content">
-            <img src="../images/banner.jpg" alt="Image at the article area" class="article__image">
-            <p class="main__text--article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laudantium ab unde provident? Perferendis harum quidem rem nesciunt fugiat dolorum laboriosam quam velit id, perspiciatis, quisquam libero nemo similique consequatur! Reiciendis est mollitia molestias, iste pariatur culpa dolor dignissimos enim quasi in, adipisci assumenda voluptatum ab vel sequi. Eaque perspiciatis reprehenderit explicabo! Architecto fugiat natus animi consequuntur, odio iusto recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore laudantium fuga laboriosam sit est ducimus provident asperiores itaque minus, soluta dicta, quidem nobis. Reprehenderit at officiis distinctio voluptates praesentium. Praesentium doloremque saepe ex earum ipsum, est repudiandae ratione eum alias amet recusandae delectus quas fugiat. Consectetur, nisi obcaecati non dolore illum nesciunt tenetur dignissimos ipsa eum culpa! Nemo, placeat! Atque perspiciatis qui provident ratione, consequatur quidem harum voluptas temporibus sit eveniet earum aliquam animi quia alias aut accusantium ullam, nam cum ipsam, explicabo necessitatibus obcaecati. Eligendi soluta alias aliquam.</p>
-          </div>
-        </article>
-        <article>
-          <h2 class="main__subtitle">Video Section</h2>
-          <div class="article__video">
-            <iframe src="https://www.youtube.com/embed/sYDzO50ZMFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laudantium ab unde provident? Perferendis harum quidem rem nesciunt fugiat dolorum laboriosam quam velit id, perspiciatis, quisquam libero nemo similique consequatur! Reiciendis est mollitia molestias, iste pariatur culpa dolor dignissimos enim quasi in, adipisci assumenda voluptatum ab vel sequi. Eaque perspiciatis reprehenderit explicabo! Architecto fugiat natus animi consequuntur, odio iusto recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore laudantium fuga laboriosam sit est ducimus provident asperiores itaque minus, soluta dicta, quidem nobis. Reprehenderit at officiis distinctio voluptates praesentium. Praesentium doloremque saepe ex earum ipsum, est repudiandae ratione eum alias amet recusandae delectus quas fugiat. Consectetur, nisi obcaecati non dolore illum nesciunt tenetur dignissimos ipsa eum culpa! Nemo, placeat! Atque perspiciatis qui provident ratione, consequatur quidem harum voluptas temporibus sit eveniet earum aliquam animi quia alias aut accusantium ullam, nam cum ipsam, explicabo necessitatibus obcaecati. Eligendi soluta alias aliquam.</p>
-        </article>
-        <section class="formattext">
-          <h2 class="main__subtitle">Copy text with all <wbr>format types</h2>
-          <p class="main__text">This is a blind text. <b>Bold text makes you pay attention.</b> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny. </p>
-          <ul class="formattext__list">
-            <li>Some</li>
-            <li>Circles</li>
-          </ul>
-          <ul class="formattext__links">
-            <li><a href="#">
-              <span class="arrow"><i class="fas fa-arrow-right"></i></span>
-              <span>This link leads to the CI.</span>
-            </a></li>
-            <li><a href="#" target="_blank">
-              <span class="arrow"><i class="fas fa-arrow-right"></i></span>
-              <span>This link leads to the CI in a new window.</span>
-            </a></li>
-          </ul>
-          <table>
-            <colgroup span="2"></colgroup>
-            <thead>
-              <tr>
-                <th>Super Nice</th>
-                <th>Duper Table</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Super</td>
-                <td>Duper</td>
-              </tr>
-              <tr>
-                <td>Nice</td>
-                <td>Table</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="formattext__quotes"><q>Someone once said inspiring stuff like this.</q></p>
-        </section>
-        <section class="form">
-          <h2 class="main__subtitle">Form</h2>
-          <form action="">
-          <div class="inputs"> 
-            <label class="label" for="text">Text</label>
-            <input type="text" name="text" id="text"><br>
-          </div>
-
-          <div class="inputs">
-            <label class="label" for="text_mandatory">Text mandatory*</label>
-            <input type="text" name="text_mandatory" id="text_mandatory" required><br>
-          </div>
-
-          <div class="inputs">
-            <label class="label" for="number">Number</label>
-            <input type="number" name="number" id="number" min="10" max="100"><br>
-          </div>
-
-          <div class="inputs textarea">
-            <label class="label" for="textarea">Text area</label>
-            <textarea name="textarea" id="textarea"></textarea>
-          </div>
-
-            <div class="checkbox">
+        <div class="content__row1">
+          <article>
+            <h1 class="main__title">Fundamentals I: Layout, Styling & Semantics</h1>
+            <section class="image">
+              <h2 class="main__subtitle">Image Section<wbr> (Lanscape, no caption)</h2>
+              <div class="article__content">
+                <img src="../images/banner.jpg" alt="Image at the article area" class="article__image">
+                <p class="main__text--article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laudantium ab unde provident? Perferendis harum quidem rem nesciunt fugiat dolorum laboriosam quam velit id, perspiciatis, quisquam libero nemo similique consequatur! Reiciendis est mollitia molestias, iste pariatur culpa dolor dignissimos enim quasi in, adipisci assumenda voluptatum ab vel sequi. Eaque perspiciatis reprehenderit explicabo! Architecto fugiat natus animi consequuntur, odio iusto recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore laudantium fuga laboriosam sit est ducimus provident asperiores itaque minus, soluta dicta, quidem nobis. Reprehenderit at officiis distinctio voluptates praesentium. Praesentium doloremque saepe ex earum ipsum, est repudiandae ratione eum alias amet recusandae delectus quas fugiat. Consectetur, nisi obcaecati non dolore illum nesciunt tenetur dignissimos ipsa eum culpa! Nemo, placeat! Atque perspiciatis qui provident ratione, consequatur quidem harum voluptas temporibus sit eveniet earum aliquam animi quia alias aut accusantium ullam, nam cum ipsam, explicabo necessitatibus obcaecati. Eligendi soluta alias aliquam.</p>
+              </div>
+            </section>
+  
+            <section class="video">
+              <h2 class="main__subtitle">Video Section</h2>
+              <div class="article__video">
+                <iframe src="https://www.youtube.com/embed/sYDzO50ZMFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laudantium ab unde provident? Perferendis harum quidem rem nesciunt fugiat dolorum laboriosam quam velit id, perspiciatis, quisquam libero nemo similique consequatur! Reiciendis est mollitia molestias, iste pariatur culpa dolor dignissimos enim quasi in, adipisci assumenda voluptatum ab vel sequi. Eaque perspiciatis reprehenderit explicabo! Architecto fugiat natus animi consequuntur, odio iusto recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore laudantium fuga laboriosam sit est ducimus provident asperiores itaque minus, soluta dicta, quidem nobis. Reprehenderit at officiis distinctio voluptates praesentium. Praesentium doloremque saepe ex earum ipsum, est repudiandae ratione eum alias amet recusandae delectus quas fugiat. Consectetur, nisi obcaecati non dolore illum nesciunt tenetur dignissimos ipsa eum culpa! Nemo, placeat! Atque perspiciatis qui provident ratione, consequatur quidem harum voluptas temporibus sit eveniet earum aliquam animi quia alias aut accusantium ullam, nam cum ipsam, explicabo necessitatibus obcaecati. Eligendi soluta alias aliquam.</p>
+            </section>
+  
+            <section class="formattext">
+              <h2 class="main__subtitle">Copy text with all <wbr>format types</h2>
+              <p class="main__text">This is a blind text. <b>Bold text makes you pay attention.</b> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny. </p>
+              <ul class="formattext__list">
+                <li>Some</li>
+                <li>Circles</li>
+              </ul>
+              <ul class="formattext__links">
+                <li><a href="#">
+                  <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                  <span>This link leads to the CI.</span>
+                </a></li>
+                <li><a href="#" target="_blank">
+                  <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                  <span>This link leads to the CI in a new window.</span>
+                </a></li>
+              </ul>
+              <table>
+                <colgroup span="2"></colgroup>
+                <thead>
+                  <tr>
+                    <th>Super Nice</th>
+                    <th>Duper Table</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Super</td>
+                    <td>Duper</td>
+                  </tr>
+                  <tr>
+                    <td>Nice</td>
+                    <td>Table</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="formattext__quotes"><q>Someone once said inspiring stuff like this.</q></p>
+            </section>
+  
+            <section class="form">
+              <h2 class="main__subtitle">Form</h2>
+              <form action="">
+              <div class="inputs"> 
+                <label class="label" for="text">Text</label>
+                <input type="text" name="text" id="text"><br>
+              </div>
+  
               <div class="inputs">
-                <p class="label">checkbox</p>
-                <div class="inputsBtn">
-                  <div class="checkbox__input">
-                    <input type="checkbox" name="check__yes" id="check__yes" value="yes">
-                    <label for="check__yes">yes</label>
-                  </div>
-                  <div class="checkbox__input">
-                    <input type="checkbox" name="check__no" id="check__no" value="no">
-                    <label for="check__no">no</label>
+                <label class="label" for="text_mandatory">Text mandatory*</label>
+                <input type="text" name="text_mandatory" id="text_mandatory" required><br>
+              </div>
+  
+              <div class="inputs">
+                <label class="label" for="number">Number</label>
+                <input type="number" name="number" id="number" min="10" max="100"><br>
+              </div>
+  
+              <div class="inputs textarea">
+                <label class="label" for="textarea">Text area</label>
+                <textarea name="textarea" id="textarea"></textarea>
+              </div>
+  
+                <div class="checkbox">
+                  <div class="inputs">
+                    <p class="label">checkbox</p>
+                    <div class="inputsBtn">
+                      <div class="checkbox__input">
+                        <input type="checkbox" name="check__yes" id="check__yes" value="yes">
+                        <label for="check__yes">yes</label>
+                      </div>
+                      <div class="checkbox__input">
+                        <input type="checkbox" name="check__no" id="check__no" value="no">
+                        <label for="check__no">no</label>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+  
+                <div class="radio">
+                  <div class="inputs">
+                    <p class="label">radio</p>
+                    <div class="inputsBtn">
+                      <div class="radio__input">
+                        <input type="radio" name="radio__yes" id="cradio__yes" value="yes">
+                        <label for="radio__yes">yes</label>
+                      </div>
+                      <div class="radio__input">
+                        <input type="radio" name="radio__no" id="radio__no" value="no">
+                        <label for="radio__no">no</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>  
-            </div>
-
-            <div class="radio">
-              <div class="inputs">
-                <p class="label">radio</p>
-                <div class="inputsBtn">
-                  <div class="radio__input">
-                    <input type="radio" name="radio__yes" id="cradio__yes" value="yes">
-                    <label for="radio__yes">yes</label>
+  
+                <div class="inputs">
+                  <label class="label" for="text_mandatory">select box</label>
+                  <select name="selectBox" id="selectBox">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                  </select>
+                  <br>
+                </div>
+  
+                <div class="inputs">
+                  <label class="label" for="email">email field (mandatory)*</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <hr>
+  
+                <div class="submit">
+                  <div class="buttons">
+                    <input type="button" value="Send" class="submit__btn">
+                    <input type="button" value="Cancel" class="cancel__btn">
                   </div>
-                  <div class="radio__input">
-                    <input type="radio" name="radio__no" id="radio__no" value="no">
-                    <label for="radio__no">no</label>
+                  <span class="submit__text">All fields masked with an asterisk (*) are mandatory.</span>
+                </div>
+  
+              </form>
+            </section>
+          </article>
+  
+          <aside>
+            <section class="contacts">
+              <h3 class="aside__title">Subheadline lorem ipsum</h3>
+              <hr>
+              <div class="contacts__content">
+                <img src="../images/banner.jpg" alt="ContactImage" class="contacts__image">
+                <div class="contacts__text">
+                  <p class="contacts__address">Contact No. 3, whose name is even a little bit longer, it will Definitely cause a line break. In fact it is really really really long. Longer than anything else.</p>
+                  <p>Mock Contact Manager</p>
+                  <div class="contacts__info">
+                    <p>T +49 13 24 54657</p>
+                    <p>F +49 98 76 54321</p>
+                    <a href="#">
+                      <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                      <span>This link leads to the CI.</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="inputs">
-              <label class="label" for="text_mandatory">select box</label>
-              <select name="selectBox" id="selectBox">
-                <option value="yes">yes</option>
-                <option value="no">no</option>
-              </select>
-              <br>
-            </div>
-
-            <div class="inputs">
-              <label class="label" for="email">email field (mandatory)*</label>
-              <input type="email" name="email" id="email" required>
-            </div>
-            <hr>
-
-            <div class="submit">
-              <div class="buttons">
-                <input type="button" value="Send" class="submit__btn">
-                <input type="button" value="Cancel" class="cancel__btn">
-              </div>
-              <span class="submit__text">All fields masked with an asterisk (*) are mandatory.</span>
-            </div>
-
-          </form>
-        </section>
+              <hr>
+            </section>
+            <section class="documents">
+              <h3 class="aside__title">All Documents Types</h3>
+              <hr>
+              <ul>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">PDF - Title</a>
+                    <p class="documents__desc">Mar 07,2017 | PDF | 88kb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Image (JPG, GIF, EPS) - Title</a>
+                    <p class="documents__desc">Mar 19,2015 | JPG | 1.49 mb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Zip - Download</a>
+                    <p class="documents__desc">Aug 03,2009 | ZIP | 566kb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Word - Document Title</a>
+                    <p class="documents__desc">Mar 07, 2017 | DOC | 80kb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Excel - Document Title</a>
+                    <p class="documents__desc">Sep 29, 2014 | XLSX | 169kb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Video - Title</a>
+                    <p class="documents__desc">Jan 31, 2011 | MP4 | 254kb</p>
+                  </div>
+                </li>
+                <hr>
+                <li class="documents__item">
+                  <!-- FALTA SVG!! -->
+                  <div class="documents__info">
+                    <a href="#" class="documents__title">Other - Document Title</a>
+                    <p class="documents__desc">Jun 12, 2007 | MDI | 127kb</p>
+                  </div>
+                </li>
+                <hr>
+              </ul>
+            </section>
+          </aside>
+        </div>
      </div>
    </main>
 

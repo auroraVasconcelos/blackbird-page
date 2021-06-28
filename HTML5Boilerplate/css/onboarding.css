@@ -147,6 +147,10 @@ nav ul li a{
   color: #bbb;
 }
 
+.breadcrumb li a span{
+  vertical-align: middle;
+}
+
 .arrow{
     font-size: 8px;
 }
@@ -154,10 +158,19 @@ nav ul li a{
 
 /*************************************************** MAIN *************************************************************/
 
+@media(min-width:1024px){
+  .content__row1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+  }
+}
+
 .main__title{
   font-size: 32px;
   font-weight: 100;
   color: #666;
+  margin-top: 0;
 }
 
 .main__subtitle{
@@ -230,6 +243,10 @@ nav ul li a{
   font-weight: bold;
 }
 
+.formattext__links li a span{
+  vertical-align: middle;
+}
+
 table{
   border-collapse: collapse;
   border: 1px solid #aaa;
@@ -263,6 +280,10 @@ table th{
 
 /******************************  Form Section ***********************************/
 
+.form{
+  margin-bottom: 2rem;
+}
+
 .form input[type=text], input[type=number], select, option, input[type=email], textarea {
   display: block;
   width: 100%;
@@ -274,7 +295,6 @@ table th{
 .label, .submit__text{
   font-size: 14px;
   color: #666;
-
 }
 
 .label p{
@@ -337,5 +357,72 @@ table th{
   .textarea label{
     vertical-align: top;
   }
-  /******************* FALTA RESPONSIVIDADE CHECKBOX E RADIO BUTTONS **************************/
+  /** FALTA RESPONSIVIDADE CHECKBOX E RADIO BUTTONS **/
 }
+
+/****************************************** ASIDE SECTION **************************************/
+
+.aside__title{
+  font-weight: 100;
+  color: #666;
+}
+
+@media(min-width:768px) and (max-width:1024px){
+  .contacts{
+    width: 50%;
+  }
+}
+
+.contacts__content a{
+  text-decoration: none;
+  color: var(--principal-color);
+  font-weight: bold;
+}
+
+.contacts__content a span{
+  vertical-align: middle;
+}
+
+.contacts__content .contacts__address{
+  font-weight: bolder;
+}
+
+.contacts__info{
+  margin-top: 1rem;
+}
+
+.contacts__content{
+  display: flex;
+}
+.contacts__text{
+  float: right;
+  width: 70%;
+  margin-left: 32px;
+  clear: both;
+} 
+.contacts__image{
+  align-content: left;
+  width: 20%;
+  max-height: 150px;
+}
+
+.documents{
+  width: 100%;
+}
+
+.documents li{
+  list-style: none;
+  display: flex;
+}
+
+.documents li a{
+  text-decoration: none;
+  color: var(--principal-color);
+}
+
+.documents li p{
+  color: #bbb;
+  font-size: 14px;
+}
+
+
