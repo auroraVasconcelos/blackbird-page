@@ -145,44 +145,73 @@
         <section class="form">
           <h2 class="main__subtitle">Form</h2>
           <form action="">
+          <div class="inputs"> 
             <label class="label" for="text">Text</label>
             <input type="text" name="text" id="text"><br>
+          </div>
+
+          <div class="inputs">
             <label class="label" for="text_mandatory">Text mandatory*</label>
             <input type="text" name="text_mandatory" id="text_mandatory" required><br>
+          </div>
+
+          <div class="inputs">
             <label class="label" for="number">Number</label>
             <input type="number" name="number" id="number" min="10" max="100"><br>
+          </div>
+
+          <div class="inputs textarea">
             <label class="label" for="textarea">Text area</label>
-            <textarea name="textarea" id="textarea" rows="10"></textarea>
+            <textarea name="textarea" id="textarea"></textarea>
+          </div>
+
             <div class="checkbox">
-              <p class="label">checkbox</p>
-              <div class="checkbox__input">
-                <input type="checkbox" name="check__yes" id="check__yes" value="yes">
-                <label for="check__yes">yes</label>
-              </div>
-              <div class="checkbox__input">
-                <input type="checkbox" name="check__no" id="check__no" value="no">
-                <label for="check__no">no</label>
-              </div>
+              <div class="inputs">
+                <p class="label">checkbox</p>
+                <div class="inputsBtn">
+                  <div class="checkbox__input">
+                    <input type="checkbox" name="check__yes" id="check__yes" value="yes">
+                    <label for="check__yes">yes</label>
+                  </div>
+                  <div class="checkbox__input">
+                    <input type="checkbox" name="check__no" id="check__no" value="no">
+                    <label for="check__no">no</label>
+                  </div>
+                </div>
+              </div>  
             </div>
+
             <div class="radio">
-              <p class="label">radio</p>
-              <div class="radio__input">
-                <input type="radio" name="radio__yes" id="cradio__yes" value="yes">
-                <label for="radio__yes">yes</label>
-              </div>
-              <div class="radio__input">
-                <input type="radio" name="radio__no" id="radio__no" value="no">
-                <label for="radio__no">no</label>
+              <div class="inputs">
+                <p class="label">radio</p>
+                <div class="inputsBtn">
+                  <div class="radio__input">
+                    <input type="radio" name="radio__yes" id="cradio__yes" value="yes">
+                    <label for="radio__yes">yes</label>
+                  </div>
+                  <div class="radio__input">
+                    <input type="radio" name="radio__no" id="radio__no" value="no">
+                    <label for="radio__no">no</label>
+                  </div>
+                </div>
               </div>
             </div>
-            <label class="label" for="text_mandatory">select box</label>
-            <select name="selectBox" id="selectBox">
-              <option value="yes">yes</option>
-              <option value="no">no</option>
-            </select><br>
-            <label class="label" for="email">email field (mandatory)*</label>
-            <input type="email" name="email" id="email" required>
+
+            <div class="inputs">
+              <label class="label" for="text_mandatory">select box</label>
+              <select name="selectBox" id="selectBox">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+              <br>
+            </div>
+
+            <div class="inputs">
+              <label class="label" for="email">email field (mandatory)*</label>
+              <input type="email" name="email" id="email" required>
+            </div>
             <hr>
+
             <div class="submit">
               <div class="buttons">
                 <input type="button" value="Send" class="submit__btn">
@@ -190,6 +219,7 @@
               </div>
               <span class="submit__text">All fields masked with an asterisk (*) are mandatory.</span>
             </div>
+
           </form>
         </section>
      </div>
