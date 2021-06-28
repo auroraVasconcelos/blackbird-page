@@ -18,7 +18,7 @@ section{
 }
 
 
-/****************************** NAV ***********************************/
+/*************************************************** NAV & HEADER *************************************************************/
 nav{
   position: relative;
 }
@@ -193,16 +193,16 @@ nav ul li a{
 .article__image{
   width: 100%;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 @media(min-width:480px){ 
   .article__image{
-      float: left;
-      width: 50%;
-      max-height: 240px;
-      margin-bottom: 16px;
-      margin-right: 32px;
-   }
+    float: left;
+    width: 50%;
+    max-height: 240px;
+    margin-right: 32px;
+  }
 
 }
 
@@ -426,12 +426,12 @@ q::before{
   width: 100%;
 }
 
-.documents li{
+.documents li, .teaserrow__content li{
   list-style: none;
   display: flex;
 }
 
-.documents li a{
+.documents li a, .teaserrow__content li a{
   text-decoration: none;
   width: 100%;
 }
@@ -448,7 +448,7 @@ q::before{
   margin-left: 0.5rem;
 }
 
-.documents li p{
+.documents__desc{
   color: #bbb;
   font-size: 14px;
 }
@@ -458,9 +458,13 @@ q::before{
   height: auto;
 }
 
-/****************************************** TEASERROW SECTION *****************************/
-section.teaserrows{
+/****************************************** TEASERROW SECTION *************************************/
+.first{
   background-color: #eee;
+}
+
+.first, .second, .third{
+  margin-bottom: 2rem;
 }
 
 .teaserrow__image{
@@ -488,13 +492,143 @@ section.teaserrows{
   margin-bottom: 0.5rem;
 }
 
+/********************* Second Row to Teaserrow ********************/
+
+.teaserrow__video{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 0.2rem;
+}
+
+.teaserrow__video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.second .teaserrow__text{
+  margin-bottom: 1rem;
+}
+
+.teaserrow__time{
+  text-align: end;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.second .teaserrow__image{
+  max-height: 344px;
+}
+
+/********************* Third Row to Teaserrow ********************/
+
+.teaserrow__hr{
+  width: 80%;
+  margin: auto;
+}
+
+.third .teaserrow__subcontent{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.teaserrow__caption{
+  display: flex;
+  justify-content: space-between;
+}
+
+.teaserrow__caption{
+  vertical-align: middle;
+}
+
 @media(min-width:600px){
-  .teaserrrows__content{
+  .first .teaserrow__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
+
   .teaserrow__image{
     margin: 0;
   }
+
+  .second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .second .teaserrow__image{
+    margin-bottom: 0.5rem;
+  }
+
+  .second .teaserrow__text{
+    margin-bottom: 0;
+  }
+
+  .third .teaserrow__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .third .teaserrow__subcontent{
+    margin-bottom: 0;
+  }
+}
+
+@media(min-width:1024px){
+  .third .teaserrow__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+
+/*************************************************** FOOTER *************************************************************/
+
+footer{
+  background-color: #555;
+  color: white;
+}
+
+footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a, footer span{
+  margin-bottom: 1rem;
+}
+
+footer a:last-child{
+  margin-bottom: 0;
+}
+
+footer a span{
+  vertical-align: middle;
+}
+
+@media(min-width:1024px){
+  footer .container{
+    flex-direction: row;
+  }
+
+  footer span, footer a{
+    margin: 0;
+  }
+
+  footer a{
+    margin-left: 1rem;
+  }
+
 }

@@ -336,11 +336,11 @@
     </div>
     
     <section class="teaserrows">
-      <div class="container first">
-        <div class="teaserrrows__content">
-          <img src="../images/banner.jpg" alt="Image Row" class="teaserrow__image">
+      <div class="first">
+        <div class="container teaserrow__content">
+          <img src="../images/banner.jpg" alt="Image to the first teaserrow" class="teaserrow__image">
           <div class="teaserrow__text">
-            <h2 class="teaserrow__subtitle">teaserrow with default teaser with <wbr>image and link (new window)</h2>
+            <h3 class="teaserrow__subtitle">teaserrow with default teaser with <wbr>image and link (new window)</h3>
             <p>Set highlight for current Teaser [yes] > element-settings</p>
             <a href="#" target="_blank">
               <span class="arrow"><i class="fas fa-arrow-right"></i></span>
@@ -349,8 +349,78 @@
           </div>
         </div>
       </div>
+
+      <div class="container second">
+        <div class="teaserrow__content">
+          <h4 class="teaserrow__subtitle">2 teaser</h4>
+          <img src="../images/banner.jpg" alt="Image to the second teaserrow" class="teaserrow__image">
+          <p class="teaserrow__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora neque mollitia repellat reprehenderit ducimus optio corporis, exercitationem consectetur distinctio! Quod unde quas reprehenderit impedit libero praesentium dignissimos sapiente quos? Culpa. Consequatur, at sit! Ex culpa laborum, optio corrupti beatae consequatur sapiente consequuntur mollitia fugit dicta recusandae atque quam quis minus aspernatur maxime reprehenderit! At magnam nesciunt assumenda delectus, sit in.</p>
+        </div>
+        <div class="teaserrow__content">
+          <h4 class="teaserrow__subtitle">Test Video</h4>
+          <div class="teaserrow__video">
+            <iframe src="https://www.youtube.com/embed/sYDzO50ZMFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="teaserrow__time">3:06</p>
+        </div>
+      </div>
+      <hr class="teaserrow__hr">
+
+      <div class="container third">
+        <h2 class="main__subtitle">Teaserrow with 3 Teasers: First teaser is a video Teaser</h2>
+        <div class="teaserrow__content">
+
+          <div class="teaserrow__subcontent">
+            <h4 class="teaserrow__subtitle">Testvid</h4>
+            <div class="teaserrow__video">
+              <iframe src="https://www.youtube.com/embed/sYDzO50ZMFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="teaserrow__caption">
+              <span class="teaserrow__text">this is a test video</span>
+              <span class="teaserrow__time easerrow__text">3:06</span>
+            </div>
+          </div>
+
+          <div class="teaserrow__subcontent">
+            <h4 class="teaserrow__subtitle">default teaser with text</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id asperiores veritatis ipsam consequatur expedita, deleniti blanditiis sapiente esse delectus praesentium nesciunt dolore omnis nisi, quasi reprehenderit placeat qui dignissimos minima.
+            Debitis, aut aliquid reiciendis magnam nobis eius, vero quod porro corporis consequuntur rem alias, quibusdam minus sequi aliquam culpa ipsum delectus sapiente provident magni officiis consectetur odio quo optio. Vitae?
+          </div>
+
+          <div class="teaserrow__subcontent">
+            <h4 class="teaserrow__subtitle">Document list</h4>
+            <ul>
+              <hr>
+              <li class="documents__item">
+                <a href="#">
+                  <img src="../images/pdf-file-format-symbol.png" alt="PDF icon" class="documents__icon" download>
+                  <div class="documents__info">
+                    <h4 class="documents__title">PDF - Title</h4>
+                    <p class="documents__desc">Mar 07,2017 | PDF | 88 kb</p>
+                  </div>
+                </a>
+              </li>
+              <hr>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <span>&copy2018 Ninja Developers</span>
+      <a href="#" target="_self">
+        <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+        <span>target same window</span>
+      </a>
+      <a href="#" target="_blank">
+        <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+        <span>target new window</span>
+      </a>
+    </div>
+  </footer>
 
   <!--Scripts-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
