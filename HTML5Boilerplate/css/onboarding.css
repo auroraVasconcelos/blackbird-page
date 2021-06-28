@@ -13,6 +13,10 @@
   margin: 0 auto;
 }
 
+section{
+  margin-bottom: 32px;
+}
+
 
 /****************************** NAV ***********************************/
 nav{
@@ -159,7 +163,7 @@ nav ul li a{
 /*************************************************** MAIN *************************************************************/
 
 @media(min-width:1024px){
-  .content__row1{
+  .content__row{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 32px;
@@ -191,20 +195,13 @@ nav ul li a{
   height: auto;
 }
 
-@media(min-width:480px){
-  .article__content{
-     display: flex;
-   }
-  .main__text--article{
-     float: right;
-     width: 50%;
-     margin-left: 32px;
-     clear: both;
-   } 
+@media(min-width:480px){ 
   .article__image{
-      align-content: left;
+      float: left;
       width: 50%;
       max-height: 240px;
+      margin-bottom: 16px;
+      margin-right: 32px;
    }
 
 }
@@ -271,12 +268,14 @@ table th{
   font-weight: lighter;
   color: #aaa;
 }
-
-.formattext__quotes::before{
-  font-size: 2rem;
+q{
+  quotes: '“' '”' '‘' '’';
 }
-
-/********* VER PRIMEIRA ASPA ************/
+q::before{
+  font-weight: bolder;
+  font-size: 30px;
+  color: brown;
+}
 
 /******************************  Form Section ***********************************/
 
@@ -300,11 +299,9 @@ table th{
 .label p{
   margin: 1rem 0;
 }
+
 .checkbox, .radio{
   padding: 1rem 0;
-}
-.checkbox__input, .radio__input{
-  padding: 0.3rem 0;
 }
 
 .submit__btn, .cancel__btn{
@@ -322,6 +319,12 @@ table th{
 
 .submit__text{
   display: block;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+
+.submit{
+  align-items: center;
 }
 
 @media(min-width:480px){
@@ -329,42 +332,49 @@ table th{
     display: flex;
     justify-content:space-between;
   }
+
+  .buttons{
+    order: -1;
+  }
+
+  .submit__text{
+    margin-bottom: 0;
+  }
 }
 
 @media(min-width:768px){
   .label{
     width: 30%;
-    text-align: right;
     margin: 0;
     padding-right: 2rem;
+    text-align: end;
+  }
+
+  .inputs{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .inputs--dif{
+    display: flex;
   }
 
   .form input[type=text],input[type=number], select, option, input[type=email], textarea, .inputsBtn{
     width: 70%;
-    margin: 0;
-    display: inline-block;
-  } 
-  .inputsBtn{
-    text-align: left;
+    align-content: center;
   }
-
-  .inputs{
-    margin: 1rem 0;
-    width: 100%;
-    text-align: right;
-  }
-
-  .textarea label{
-    vertical-align: top;
-  }
-  /** FALTA RESPONSIVIDADE CHECKBOX E RADIO BUTTONS **/
 }
 
-/****************************************** ASIDE SECTION **************************************/
+/****************************************** ASIDE SECTION ************************/
 
 .aside__title{
   font-weight: 100;
   color: #666;
+}
+
+.hr__title{
+  margin: 0.5rem 0 1rem 0;
 }
 
 @media(min-width:768px) and (max-width:1024px){
@@ -373,7 +383,7 @@ table th{
   }
 }
 
-.contacts__content a{
+.contacts__mail{
   text-decoration: none;
   color: var(--principal-color);
   font-weight: bold;
@@ -381,6 +391,12 @@ table th{
 
 .contacts__content a span{
   vertical-align: middle;
+}
+
+.contacts__phone__text{
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 
 .contacts__content .contacts__address{
@@ -397,12 +413,12 @@ table th{
 .contacts__text{
   float: right;
   width: 70%;
-  margin-left: 32px;
+  margin-left: 16px;
   clear: both;
 } 
 .contacts__image{
   align-content: left;
-  width: 20%;
+  width: 25%;
   max-height: 150px;
 }
 
@@ -417,7 +433,19 @@ table th{
 
 .documents li a{
   text-decoration: none;
+  width: 100%;
+}
+
+.documents__title{
   color: var(--principal-color);
+  font-weight: normal;
+}
+
+.documents__info{
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
 }
 
 .documents li p{
@@ -425,4 +453,48 @@ table th{
   font-size: 14px;
 }
 
+.documents__icon{
+  width: 10%;
+  height: auto;
+}
 
+/****************************************** TEASERROW SECTION *****************************/
+section.teaserrows{
+  background-color: #eee;
+}
+
+.teaserrow__image{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.teaserrow__text a{
+  text-decoration: none;
+  color: var(--principal-color);
+  font-weight: 400;
+}
+
+.teaserrow__text a span{
+  vertical-align: middle;
+}
+
+.teaserrow__subtitle{
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+
+.teaserrow__text p{
+  margin-bottom: 0.5rem;
+}
+
+@media(min-width:600px){
+  .teaserrrows__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .teaserrow__image{
+    margin: 0;
+  }
+}
