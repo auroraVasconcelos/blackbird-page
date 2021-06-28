@@ -541,7 +541,7 @@ q::before{
 }
 
 .teaserrow__caption{
-  vertical-align: middle;
+  align-items: center;
 }
 
 @media(min-width:600px){
