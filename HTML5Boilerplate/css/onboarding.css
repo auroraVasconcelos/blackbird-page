@@ -268,13 +268,27 @@ table th{
   font-weight: lighter;
   color: #aaa;
 }
-q{
-  quotes: '“' '”' '‘' '’';
+
+blockquote {
+  padding: 0.5em 10px;
+  quotes: "“""”""‘""’";
 }
-q::before{
-  font-weight: bolder;
-  font-size: 30px;
-  color: brown;
+
+blockquote:before {
+  color: rgb(88, 52, 52);
+  content: open-quote;
+  font-size: 5rem;
+  line-height: 0.1em;
+  vertical-align: -0.5em;
+}
+
+blockquote:after{
+  content: close-quote;
+  color: #aaa;
+}
+
+blockquote p {
+  display: inline;
 }
 
 /******************************  Form Section ***********************************/
@@ -526,7 +540,7 @@ q::before{
 /********************* Third Row to Teaserrow ********************/
 
 .teaserrow__hr{
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -545,6 +559,9 @@ q::before{
 }
 
 @media(min-width:600px){
+  .teaserrow__hr{
+    width: 50%;
+  }
   .first .teaserrow__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
