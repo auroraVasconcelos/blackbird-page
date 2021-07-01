@@ -6,7 +6,7 @@
 
   --alpha: .8;
   --primary-rgb: 67, 156, 206;
-  
+
   --color-primary: rgb(var(--primary-rgb));
   --color-primary-lighter: rgba(var(--primary-rgb), var(--alpha));
   --color-white: #ffffff;
@@ -575,7 +575,7 @@ textarea {
 }
 
 /* TEASERROW - THIRD ROW */
-.teaserRow hr {
+.teaserRow__hr {
   width: 70%;
   margin: auto;
 }
@@ -592,7 +592,7 @@ textarea {
 }
 
 @media(min-width:600px) {
-  .teaserRow hr {
+  .teaserRow__hr {
     width: 50%;
   }
 
